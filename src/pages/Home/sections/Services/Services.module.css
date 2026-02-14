@@ -1,19 +1,72 @@
 .services {
-  padding: 5rem 8%;
-  background: #020617;
-  color: white;
+  background: #f3f4f6;
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.subtitle {
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+  color: #6b7280;
+  line-height: 1.7;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
-.grid div {
-  background: #0f172a;
-  padding: 1.5rem;
-  border-radius: 8px;
-  text-align: center;
+.card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 40px;
+  color: #22c55e;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.card p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
