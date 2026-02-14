@@ -1,49 +1,46 @@
+// src/data/projects.js
+
 export const projects = [
   {
-    title: "Apple Website Replica",
-    image: "/images/projects/apple.jpg",
-    description: "Responsive React-based Apple website clone.",
-    github: "#",
-    live: "#",
+    id: 1,
+    title: "Amazon Clone (MERN)",
+    image: "/images/amazon.png",
+    github: "https://github.com/meepleup/amazon-clone-2025",
+    live: "https://your-live-link.com",
   },
-
   {
+    id: 2,
+    title: "Apple Website Replica",
+    image: "/images/apple.png",
+    github: "https://github.com/meepleup/apple-clone",
+    live: "https://meepleup.github.io/apple-clone/",
+  },
+  {
+    id: 3,
     title: "Netflix Clone",
-    image: "/images/projects/project-netflix.jpg",
-    description: "HTML, CSS, JavaScript Netflix UI Clone.",
+    image: "/images/netflix.png",
     github: "https://github.com/meepleup/Netflix-Clone-2025",
     live: "https://meepleup.github.io/Netflix-Clone-2025/",
   },
-
   {
-    title: "Amazon Clone (MERN)",
-    image: "/images/projects/amazon.jpg",
-    description: "Full-stack e-commerce platform using MERN.",
-    github: "#",
+    id: 4,
+    title: "Evagadi Forum",
+    image: "/images/evangadi.png",
+    github: "https://github.com/meepleup/Evangadi-forum-project",
     live: "#",
   },
-
   {
-    title: "Evangadi Forum",
-    image: "/images/projects/portfolio.jpg",
-    description: "Tech community platform with React.",
-    github: "https://github.com/meepleup/Evangadi-Forum",
-    live: "https://meepleup.github.io/Evangadi-Forum/",
-  },
-
-  {
+    id: 5,
     title: "Zoom Clone",
-    image: "/images/projects/zoom.jpg",
-    description: "Video conferencing app using WebRTC.",
-    github: "https://github.com/meepleup/Zoom-Clone",
-    live: "https://meepleup.github.io/Zoom-Clone/",
+    image: "/images/zoom.png",
+    github: "https://github.com/meepleup/zoom-clone",
+    live: "#",
   },
-
   {
-    title: "Instagram Clone",
-    image: "/images/projects/instagram.jpg",
-    description: "Social media app using Firebase.",
-    github: "https://github.com/meepleup/Instagram-Clone",
-    live: "https://meepleup.github.io/Instagram-Clone/",
+    id: 6,
+    title: "portfolio website",
+    image: "/images/portfolio.png",
+    github: "https://github.com/meepleup/samual-molla-portfolio",
+    live: "#",
   },
 ];

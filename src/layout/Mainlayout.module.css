@@ -1,13 +1,21 @@
 .layout {
   display: flex;
+  min-height: 100vh;
 }
 
+/* SIDEBAR WIDTH */
+.sidebar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+/* MAIN CONTENT */
 .content {
   flex: 1;
-  min-height: 100vh;
-  margin-left: 280px;
+  margin-left: 260px; /* SAME as sidebar width */
 }
 
+/* MOBILE */
 @media (max-width: 992px) {
   .content {
     margin-left: 0;
