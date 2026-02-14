@@ -1,53 +1,77 @@
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 260px;
   height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: #0b1623;
-  padding: 2rem 1.5rem;
-  z-index: 1000;
+  background: #0b1628;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
+/* PROFILE CONTAINER */
 .profile {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 40px;
 }
 
-.profile img {
-  width: 160px;           /* 🔥 Bigger */
+/* OUTER RING */
+.profileImageWrapper {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #3a4456; /* gray ring */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* INNER IMAGE */
+.profileImageWrapper img {
+  width: 160px;
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #4f46e5;
-  margin-bottom: 1rem;
 }
 
+/* NAME */
 .profile h2 {
   color: white;
-  font-size: 1.3rem;
+  font-size: 20px;
   font-weight: 600;
 }
 
-.sidebar nav ul {
-  list-style: none;
-  padding: 0;
+/* NAV LINKS */
+.nav {
   width: 100%;
 }
 
-.sidebar nav ul li {
-  margin: 1rem 0;
-  text-align: center;
+.nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-.sidebar nav ul li a {
+.nav li {
+  margin: 14px 0;
+}
+
+.nav a {
   color: #cbd5e1;
   text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s ease;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
-.sidebar nav ul li a:hover {
-  color: #4f46e5;
+.nav a:hover {
+  color: #2dd4bf;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
 }

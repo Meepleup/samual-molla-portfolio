@@ -1,22 +1,69 @@
 import styles from "./Contact.module.css";
+import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 
 function Contact() {
   return (
     <section id="contact" className={styles.contact}>
 
-      <h2>Contact</h2>
+      <div className={styles.container}>
 
-      <form>
+        {/* Title */}
+        <h2 className={styles.title}>Get in Touch</h2>
+        <p className={styles.subtitle}>
+          Feel free to contact me anytime
+        </p>
 
-        <input type="text" placeholder="Name" required />
+        {/* Form */}
+        <form className={styles.form}>
 
-        <input type="email" placeholder="Email" required />
+          <div className={styles.row}>
+            <input
+              type="text"
+              placeholder="Your Name"
+              className={styles.input}
+              required
+            />
 
-        <textarea placeholder="Message" required />
+            <input
+              type="email"
+              placeholder="Your Email"
+              className={styles.input}
+              required
+            />
+          </div>
 
-        <button>Send Message</button>
+          <textarea
+            placeholder="Your Message"
+            className={styles.textarea}
+            required
+          />
 
-      </form>
+          <button type="submit" className={styles.button}>
+            Send Message
+          </button>
+
+        </form>
+
+        {/* Contact Info */}
+        <div className={styles.info}>
+
+          <h3>Contact Info</h3>
+
+          <p>
+            <FaMapMarkerAlt className={styles.icon} />
+            Adress
+          </p>
+          <p>
+            <FaPhone className={styles.icon} />
+            phone
+          </p>
+          <p>
+            <FaEnvelope className={styles.icon} />
+            Gmail
+          </p>
+        </div>
+
+      </div>
 
     </section>
   );
