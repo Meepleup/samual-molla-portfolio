@@ -1,0 +1,15 @@
+.layout {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  min-height: 100vh;
+  margin-left: 280px;
+}
+
+@media (max-width: 992px) {
+  .content {
+    margin-left: 0;
+  }
+}

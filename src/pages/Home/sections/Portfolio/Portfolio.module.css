@@ -1,0 +1,19 @@
+.portfolio {
+  padding: 5rem 8%;
+  background: #0f172a;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.grid a {
+  background: #020617;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}

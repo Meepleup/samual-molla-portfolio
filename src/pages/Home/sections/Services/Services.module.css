@@ -1,0 +1,19 @@
+.services {
+  padding: 5rem 8%;
+  background: #020617;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.grid div {
+  background: #0f172a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}

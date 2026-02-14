@@ -1,0 +1,47 @@
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #0f172a;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile h2 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.menu {
+  list-style: none;
+  width: 100%;
+}
+
+.menu li {
+  margin-bottom: 1rem;
+}
+
+.menu a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  padding: 0.5rem 0;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #4f46e5;
+}
