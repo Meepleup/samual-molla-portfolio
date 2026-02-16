@@ -4,26 +4,21 @@ import profile from "../../assets/images/profile.jpg";
 function Sidebar() {
   return (
     <aside className={styles.sidebar}>
-      <div className={styles.profile}>
-        
-        <div className={styles.profileImageWrapper}>
-          <img src={profile} alt="Samual Molla" />
-        </div>
-
-        <h2>Samual Molla</h2>
-
+      <img
+        src={profile}
+        alt="Samual Molla"
+        className={styles.avatar}
+      />
+      <div className={styles.name}>
+        Samual Molla
       </div>
-
       <nav className={styles.nav}>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#home" className={styles.link}>Home</a>
+        <a href="#about" className={styles.link}>About</a>
+        <a href="#skills" className={styles.link}>Skills</a>
+        <a href="#services" className={styles.link}>Services</a>
+        <a href="#portfolio" className={styles.link}>Portfolio</a>
+        <a href="#contact" className={styles.link}>Contact</a>
       </nav>
     </aside>
   );

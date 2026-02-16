@@ -1,7 +1,5 @@
 import styles from "./Home.module.css";
-
 import Meta from "../../seo/Meta";
-
 import Hero from "./sections/Hero/Hero";
 import About from "./sections/About/About";
 import Skills from "./sections/Skills/Skills";
@@ -17,7 +15,6 @@ function Home() {
         title="Samual Molla | Full Stack Developer"
         description="Professional portfolio of Samual Molla - React & Full Stack Developer."
       />
-
       <main className={styles.home}>
         <Hero />
         <About />

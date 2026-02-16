@@ -1,26 +1,34 @@
+/* Root layout */
 .layout {
   display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(0,122,255,0.08), transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(175,82,222,0.08), transparent 40%),
+    #020617;
 }
 
+/* Right side wrapper */
 .page {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-
-  margin-left: 280px;
-  width: calc(100% - 280px);
+  flex: 1;
+  min-width: 0;
+  background: transparent;
 }
 
+/* Main content */
 .content {
   flex: 1;
+  width: 100%;
+  background: transparent;
+  position: relative;
 }
 
-/* Mobile */
+/* Mobile layout */
 @media (max-width: 992px) {
-
-  .page {
-    margin-left: 0;
-    width: 100%;
+  .layout {
+    flex-direction: column;
   }
-
 }

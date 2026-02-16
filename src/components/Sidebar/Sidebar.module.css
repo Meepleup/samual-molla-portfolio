@@ -1,77 +1,92 @@
 .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 260px;
+  min-width: 260px;
   height: 100vh;
-  background: #0b1628;
-  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 28px 18px;
+
+  /* SAME base color as layout */
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.04),
+      rgba(255,255,255,0.01)
+    ),
+    #020617;
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-right: 1px solid rgba(255,255,255,0.08);
+  box-shadow:
+    inset -1px 0 0 rgba(255,255,255,0.04);
 }
 
-/* PROFILE CONTAINER */
-.profile {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-/* OUTER RING */
-.profileImageWrapper {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  background: #3a4456; /* gray ring */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-/* INNER IMAGE */
-.profileImageWrapper img {
+/* Profile image */
+.avatar {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.12);
+  margin-bottom: 16px;
 }
 
-/* NAME */
-.profile h2 {
-  color: white;
-  font-size: 20px;
+/* Name */
+.name {
+  font-size: 18px;
   font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 30px;
 }
 
-/* NAV LINKS */
+/* Navigation */
 .nav {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.nav ul {
-  list-style: none;
-  padding: 0;
+/* Links */
+.link {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: rgba(255,255,255,0.65);
+  transition: all 0.25s ease;
 }
 
-.nav li {
-  margin: 14px 0;
+/* Apple glow hover */
+.link:hover {
+  color: white;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,122,255,0.15),
+      rgba(175,82,222,0.15)
+    );
+  box-shadow:
+    0 0 18px rgba(0,122,255,0.25);
+  transform: translateX(4px);
 }
 
-.nav a {
-  color: #cbd5e1;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s;
+/* Active */
+.active {
+  color: white;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,122,255,0.25),
+      rgba(175,82,222,0.25)
+    );
 }
 
-.nav a:hover {
-  color: #2dd4bf;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
+/* Mobile */
+@media (max-width: 992px) {
   .sidebar {
-    display: none;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
   }
-}
+};

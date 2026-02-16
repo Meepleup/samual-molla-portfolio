@@ -1,30 +1,196 @@
 .footer {
-  background: #020617;
-  color: #94a3b8;
-  padding: 25px 40px;
+  width: 100%;
+  max-width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  /* Apple-level premium background */
+  background:
+    radial-gradient(circle at 20% -10%, rgba(0,122,255,0.18), transparent 45%),
+    radial-gradient(circle at 80% -10%, rgba(175,82,222,0.18), transparent 45%),
+    linear-gradient(180deg, #020617 0%, #010409 100%);
 }
 
-.container {
+/* Glass container */
+.glass {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 28px 32px;
+  box-sizing: border-box;
+  /* Premium Apple glass */
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.02)
+  );
+
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 20px;
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.12),
+    inset 0 -1px 0 rgba(255,255,255,0.04);
+}
+
+/* Top section */
+.top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
+/* Brand */
+.brand {
+  max-width: 400px;
+}
+
+/* Apple typography glow */
+.logo {
+  color: rgba(255,255,255,0.92);
+  text-shadow:
+    0 0 12px rgba(255,255,255,0.15);
+}
+
+.tagline {
+  color: rgba(255,255,255,0.6);
+}
+
+/* Social icons */
 .socials {
   display: flex;
-  gap: 15px;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.icon {
+
+  font-size: 20px;
+  color: rgba(255,255,255,0.65);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+
+  /* Apple glass button */
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.02)
+  );
+
+  border: 1px solid rgba(255,255,255,0.08);
+  transition:
+    transform 0.35s cubic-bezier(.2,.8,.2,1),
+    box-shadow 0.35s ease,
+    background 0.35s ease,
+    color 0.35s ease;
+
+}
+
+/* Premium hover */
+.icon:hover {
+  transform: translateY(-5px) scale(1.08);
+  color: rgba(255,255,255,0.95);
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.16),
+    rgba(255,255,255,0.04)
+  );
+
+  box-shadow:
+    0 6px 20px rgba(0,122,255,0.35),
+    0 0 18px rgba(0,122,255,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.18);
+
+}
+
+/* Bottom */
+.bottom {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.copy {
+  color: rgba(255,255,255,0.45);
+}
+
+/* Links */
 .links {
   display: flex;
-  gap: 20px;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .links a {
-  color: #94a3b8;
-  text-decoration: none;
+  color: rgba(255,255,255,0.65);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Apple gradient underline */
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    #007aff,
+    #af52de
+  );
+  transition: width 0.35s ease;
 }
 
 .links a:hover {
-  color: white;
+  color: rgba(255,255,255,0.95);
+  text-shadow:
+    0 0 8px rgba(0,122,255,0.35);
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 32px 16px;
+  }
+
+  .glass {
+    padding: 22px 16px;
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+
 }

@@ -10,10 +10,8 @@ function Hero() {
         style={{ backgroundImage: `url(${background})` }}
       >
         <div className={styles.overlay} />
-
         <div className={styles.content}>
           <h1 className={styles.greeting}>Hello</h1>
-
           <h2 className={styles.title}>
             I'm Samual{" "}
             <span className={styles.typingWrapper}>

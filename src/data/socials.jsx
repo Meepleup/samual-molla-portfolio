@@ -1,4 +1,13 @@
-import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
+import { 
+  FaGithub, 
+  FaLinkedin, 
+  FaInstagram, 
+  FaFacebook, 
+  FaDiscord, 
+  FaYoutube 
+} from "react-icons/fa";
+
+import { FaTiktok } from "react-icons/fa6";
 
 const socials = [
   {
@@ -9,17 +18,32 @@ const socials = [
   {
     id: 2,
     icon: FaLinkedin,
-    link: "https://linkedin.com",
+    link: "https://linkedin.com/in/nileinsight",
   },
   {
     id: 3,
     icon: FaInstagram,
-    link: "https://instagram.com",
+    link: "https://instagram.com/nileinsight",
   },
   {
     id: 4,
     icon: FaFacebook,
-    link: "https://facebook.com",
+    link: "https://facebook.com/nileinsight",
+  },
+  {
+    id: 5,
+    icon: FaDiscord,
+    link: "https://discord.gg/nileinsight", // or your profile link
+  },
+  {
+    id: 6,
+    icon: FaTiktok,
+    link: "https://tiktok.com/@nileinsight",
+  },
+  {
+    id: 7,
+    icon: FaYoutube,
+    link: "https://youtube.com/@nileinsight",
   },
 ];
 
