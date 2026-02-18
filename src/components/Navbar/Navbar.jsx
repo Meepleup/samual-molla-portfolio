@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
-import navLinks from "./navLinks";
+import navLinks from "./NavLinks";
 import profileImg from "../../assets/images/profile.jpg";
 
 function Navbar() {
