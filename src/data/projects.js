@@ -6,7 +6,7 @@ export const projects = [
     title: "Amazon Clone (MERN)",
     image: "/images/amazon.png",
     github: "https://github.com/meepleup/amazon-clone-2025",
-    live: "https://your-live-link.com",
+    live: "https://samual-amazon-clone.netlify.app/",
   },
   {
     id: 2,
