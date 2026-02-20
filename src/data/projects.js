@@ -41,6 +41,6 @@ export const projects = [
     title: "portfolio website",
     image: "/images/portfolio.png",
     github: "https://github.com/meepleup/samual-molla-portfolio",
-    live: "#",
+    live: "https://samual-molla-portfolio.netlify.app/",
   },
 ];
