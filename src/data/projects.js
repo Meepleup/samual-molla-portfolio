@@ -27,7 +27,7 @@ export const projects = [
     title: "Evagadi Forum",
     image: "/images/evangadi.png",
     github: "https://github.com/meepleup/Evangadi-forum-project",
-    live: "#",
+    live: "https://group-evangadi-project.netlify.app/",
   },
   {
     id: 5,
