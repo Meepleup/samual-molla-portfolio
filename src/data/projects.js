@@ -17,10 +17,10 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Netflix Clone",
-    image: "/images/netflix.png",
-    github: "https://github.com/meepleup/Netflix-Clone-2025",
-    live: "https://meepleup.github.io/Netflix-Clone-2025/",
+    title: "Movie Sharing App",
+    image: "/images/movieapp.png",
+    github: "https://github.com/meepleup/movie-sharing-app",
+    live: "https://movie-sharing-app.netlify.app/",
   },
   {
     id: 4,
